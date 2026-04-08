@@ -27,6 +27,16 @@
 
     <hr />
     <h2>單一網頁內部連結(錨點)</h2>
+    <a href="#target1">錨點1</a>
+    <a href="#target2">錨點2</a>
+    <a href="#target3">錨點3</a>
+    <div style="background-color: lightblue; height: 100vh"></div>
+    <p id="target1">指定目標1</p>
+    <div style="background-color: pink; height: 100vh"></div>
+    <p id="target2">指定目標2</p>
+    <div style="background-color: lightgreen; height: 100vh"></div>
+    <p id="target3">指定目標3</p>
+    <div style="background-color: salmon; height: 100vh"></div>
 
     <hr />
     <h2>電子郵件</h2>
@@ -35,6 +45,25 @@
     <h2>檔案檢視/下載</h2>
 
     <hr />
-    <h2>超連結結合清單</h2>
+    <h2>清單結合超連結</h2>
+    <h3>延伸閱讀</h3>
+    <ul>
+      <!-- 方式一： li > a > 文字 -->
+      <li>
+        <a
+          href="https://www.peoplenews.tw/articles/sports-recreation/25267?utm_source=peoplenews&utm_medium=referral&utm_campaign=25456"
+          target="_blank"
+        >
+          全中職唯一對戰挨過2轟 徐若熙8日有望日職首對決林安可
+        </a>
+      </li>
+      <!-- 方式二： a > li > 文字 -->
+      <a
+        href="https://www.peoplenews.tw/articles/sports-recreation/25005?utm_source=peoplenews&utm_medium=referral&utm_campaign=25456"
+      >
+        <li>MLB》鄧愷威成功拆彈中繼2.1局無失分 主播喊：幫他募資買新人卡</li>
+      </a>
+      <li>2026職棒懶人包》中職、MLB、日職開打時間、轉播資訊一次看</li>
+    </ul>
   </body>
 </html>
