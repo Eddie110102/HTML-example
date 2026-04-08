@@ -51,6 +51,10 @@
 
     <hr />
     <h2>檔案檢視/下載</h2>
+    <a href="./網頁設計入門_260318.pdf" target="_blank"
+      >網頁設計入門_260318（檢視）</a
+    >
+    <a href="./網頁設計入門_260318.pdf" download>網頁設計入門_260318（下載）</a>
 
     <hr />
     <h2>清單結合超連結</h2>
@@ -61,17 +65,25 @@
         <a
           href="https://www.peoplenews.tw/articles/sports-recreation/25267?utm_source=peoplenews&utm_medium=referral&utm_campaign=25456"
           target="_blank"
+          style="background-color: lightblue"
         >
           全中職唯一對戰挨過2轟 徐若熙8日有望日職首對決林安可
         </a>
       </li>
       <!-- 方式二： a > li > 文字 -->
       <a
-        href="https://www.peoplenews.tw/articles/sports-recreation/25005?utm_source=peoplenews&utm_medium=referral&utm_campaign=25456"
+        href="https://www.peoplenews.tw/articles/sports-recreation/25005?utm_source=peoplenews&utm_medium=referral&utm_campaign=25456" target="_blank"
       >
-        <li>MLB》鄧愷威成功拆彈中繼2.1局無失分 主播喊：幫他募資買新人卡</li>
+        <li style="background-color: lightblue">
+          MLB》鄧愷威成功拆彈中繼2.1局無失分 主播喊：幫他募資買新人卡
+        </li>
       </a>
-      <li>2026職棒懶人包》中職、MLB、日職開打時間、轉播資訊一次看</li>
+      <!-- 方式三： li > a > div > 文字 -->
+      <li>
+        <a href="https://www.peoplenews.tw/articles/sports-recreation/25005?utm_source=peoplenews&utm_medium=referral&utm_campaign=25456" target="_blank">
+          <div style="background-color: lightblue;">2026職棒懶人包》中職、MLB、日職開打時間、轉播資訊一次看</div>
+        </a>
+      </li>
     </ul>
   </body>
 </html>
