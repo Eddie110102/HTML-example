@@ -1,0 +1,30 @@
+img {
+  /* 背景色 */
+  background-color: lightblue;
+
+  /* 內容 (藍色區域) */
+  width: 250px;
+  height: 250px;
+
+  /* 邊框 */
+  border: 10px solid navy;
+  /* 設定單邊邊框 */
+  /* border-top: 5px solid navy;
+  border-left: 5px solid salmon;
+  border-bottom: 5px solid lightseagreen;
+  border-right: 5px solid purple; */
+
+  /* 內邊距 (內容與邊框的距離) */
+  padding: 20px;
+  /* padding: 20px 40px; */
+  /* padding: 20px 40px 80px; */
+  /* padding: 20px 40px 80px 160px; */
+
+  /* padding-top: 20px;
+  padding-bottom: 40px;
+  padding-left: 80px;
+  padding-right: 160px; */
+
+  /* 外邊距 (元素與元素之間的距離) */
+  margin: 50px;
+}
