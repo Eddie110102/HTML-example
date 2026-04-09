@@ -32,7 +32,7 @@ img,
   /* padding-right: 160px; */
 
   /* 外邊距 (元素與元素之間的距離) */
-  margin: 50px;
+  /* margin: 50px; */
   /* margin: 50px 100px; */
   /* margin: 50px 100px 200px; */
   /* margin: 50px 100px 400px; */
@@ -80,4 +80,13 @@ html {
 
 .text-center {
   text-align: center;
+}
+
+/* 移除空白 */
+.box2 {
+  font-size: 0;
+}
+
+.box2 .box {
+  font-size: initial;
 }
