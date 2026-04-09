@@ -73,12 +73,11 @@ html {
   scroll-behavior: smooth;
 }
 
-
 /* 區塊元素水平置中 margin */
-.box-center{
+.box-center {
   margin: 50px auto;
 }
 
-.text-center{
+.text-center {
   text-align: center;
 }
