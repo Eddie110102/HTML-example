@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS權重</title>
+    <style>
+      /* 全域選擇器 (0,0,0) */
+      * {
+        color: yellow;
+      }
+      /* 標籤選擇器 (0,0,1) */
+      h2 {
+        color: red;
+      }
+      /* 類別選擇器 (0,1,0) */
+      .font1 {
+        color: blue;
+        /* font-weight: normal; */
+      }
+      /* ID選擇器 (1,0,0) */
+      #font2 {
+        color: green;
+      }
+
+      .font3 {
+        color: salmon;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="font3 font1">標題元素</h2>
+    <h2 class="font1" id="font2">標題元素</h2>
+    <h2 id="font2" style="color: pink">標題元素</h2>
+    <h2>標題元素</h2>
+  </body>
+</html>

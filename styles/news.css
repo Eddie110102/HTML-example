@@ -1,0 +1,19 @@
+/* CSS語法 */
+h1{
+  color: navy;
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 18px;
+}
+.date {
+  font-size: 14px;
+  color: gray;
+}
+p {
+  font-size: 18px;
+  line-height: 1.7;
+  text-align: justify;
+}

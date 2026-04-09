@@ -68,21 +68,47 @@
         color: lightgreen;
       }
 
-
       /* 多個選擇器 */
-      .red{
+      .red {
         color: red;
       }
-      .fz50{
+      .fz50 {
         font-size: 50px;
       }
-      .fwb{
+      .fwb {
         font-weight: bold;
       }
 
-      .redfwbfz50{
+      .redfwbfz50 {
         color: purple;
         font-size: 100px;
+      }
+
+      /* ID選擇器 (一個屬性值只能給一個元素使用) */
+      /* 
+        #ID屬性值 {
+          CSS屬性名稱: CSS屬性值;
+          CSS屬性名稱: CSS屬性值;
+          CSS屬性名稱: CSS屬性值;
+          CSS屬性名稱: CSS屬性值;
+        }
+      */
+      #theP {
+        font-size: 35px;
+        color: navy;
+        text-decoration: underline navy double;
+      }
+
+      /* 全域選擇器 (*) 此文件中所有的元素 */
+      /* 
+        * {
+          CSS屬性名稱: CSS屬性值;
+          CSS屬性名稱: CSS屬性值;
+          CSS屬性名稱: CSS屬性值;
+        }
+      */
+      * {
+        font-style: italic;
       }
     </style>
   </head>
@@ -106,5 +132,6 @@
     <h4>標題元素</h4>
 
     <div class="red fwb fz50">將多個選擇器放在同一個元素</div>
+    <p id="theP">段落元素-4</p>
   </body>
 </html>
