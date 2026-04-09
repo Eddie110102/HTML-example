@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 img,
 .box {
   /* 背景色 */
@@ -66,4 +71,14 @@ img,
 
 html {
   scroll-behavior: smooth;
+}
+
+
+/* 區塊元素水平置中 margin */
+.box-center{
+  margin: 50px auto;
+}
+
+.text-center{
+  text-align: center;
 }

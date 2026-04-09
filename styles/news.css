@@ -17,3 +17,13 @@ p {
   line-height: 1.7;
   text-align: justify;
 }
+
+.container{
+  width: 750px;
+  margin: auto;
+}
+
+.container img{
+  width: 100%;
+  border-radius: 15px;
+}
