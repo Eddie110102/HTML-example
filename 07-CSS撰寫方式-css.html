@@ -4,10 +4,88 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS 撰寫方式</title>
+    <!-- 內部樣式表 -->
+    <style>
+      /* CSS註解符號 */
+      /* CSS樣式 */
+      /* 
+          CSS選擇器 {
+            CSS屬性名稱: CSS屬性值;
+            CSS屬性名稱: CSS屬性值;
+            CSS屬性名稱: CSS屬性值;
+            CSS屬性名稱: CSS屬性值;
+            CSS屬性名稱: CSS屬性值;
+          }
+      */
+      /* 標籤選擇器 */
+      h3,
+      h4,
+      h5,
+      h6,
+      div,
+      a,
+      ul,
+      ol,
+      dl {
+        color: red;
+      }
+      p {
+        /* color: blue; */
+        font-size: 20px;
+      }
+
+      /* 類別選擇器 class */
+      /* 
+          .class屬性值 {
+            CSS屬性名稱: CSS屬性值;
+            CSS屬性名稱: CSS屬性值;
+            CSS屬性名稱: CSS屬性值;
+            CSS屬性名稱: CSS屬性值;
+          }
+      */
+
+      .orange {
+        color: orange;
+      }
+
+      .green {
+        color: green;
+      }
+
+      /* 條件設定更嚴格 */
+      /* 同一個元素的設定： 選擇器1選擇器2 */
+      p.orange {
+        color: purple;
+      }
+
+      /* 外層&子層條件： 選擇器1 選擇器2 */
+      p .orange {
+        color: pink;
+      }
+
+      /* 父層&子層條件： 選擇器1>選擇器2 */
+      p > .orange {
+        color: lightgreen;
+      }
+    </style>
   </head>
   <body>
     <h1>CSS 撰寫方式</h1>
     <h2>1. 行內樣式</h2>
-    <p style="background-color: lightblue; color: blue;">行內樣式</p>
+    <p style="background-color: lightblue; color: blue">行內樣式</p>
+
+    <h2 class="orange">2. 內部樣式表</h2>
+    <h3 class="orange">標題元素</h3>
+    <p class="orange">段落元素-1</p>
+    <p class="green">段落元素-2</p>
+    <p>段落元素-3 <span class="orange">子元素span</span></p>
+    <p>
+      段落元素-3
+      <span
+        >子元素span-1
+        <span class="orange">孫層span-2</span>
+      </span>
+    </p>
+    <h4>標題元素</h4>
   </body>
 </html>
