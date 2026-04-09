@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh-hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>超連結樣式 - anchor css</title>
+    <link rel="stylesheet" href="./styles/anchor.css" />
+  </head>
+  <body>
+    <h1>超連結樣式</h1>
+    <h2>外部連結</h2>
+    <a class="anchor1" href="https://www.google.com">Google</a>
+    <a class="anchor1" href="https://www.google.com" target="_blank"
+      >Google（開啟新分頁）</a
+    >
+
+    <hr />
+    <h2>網站內部連結</h2>
+    <a href="01-HTML文件結構-html-skeleton.html"
+      >01-HTML文件結構-html-skeleton</a
+    >
+    <a href="02-文字元素-text.html">02-文字元素-text</a>
+    <a href="03-區塊與行內元素-block-inline.html"
+      >03-區塊與行內元素-block-inline</a
+    >
+    <a href="04-圖片元素-image.html">04-圖片元素-image</a>
+    <a href="05-清單元素-list.html">05-清單元素-list</a>
+    <a href="06-超連結元素-anchor.html">06-超連結元素-anchor</a>
+    <!-- <a href="./longterm/EEIT.html">EEIT</a> -->
+
+    <hr />
+    <h2>單一網頁內部連結(錨點)</h2>
+    <a href="#target1" class="target">錨點1</a>
+    <a href="#target2" class="target">錨點2</a>
+    <a href="#target3" class="target">錨點3</a>
+    <div style="background-color: lightblue; height: 100vh"></div>
+    <p id="target1">指定目標1</p>
+    <div style="background-color: pink; height: 100vh"></div>
+    <p id="target2">指定目標2</p>
+    <div style="background-color: lightgreen; height: 100vh"></div>
+    <p id="target3">指定目標3</p>
+    <div style="background-color: salmon; height: 100vh"></div>
+
+    <hr />
+    <h2>電子郵件</h2>
+    <a
+      href="mailto:eddiewang@ispan.com.tw?subject=EEIT學員請假&body=姓名：%0a座號：%0a日期：%0a時數："
+      >學員請假</a
+    >
+
+    <hr />
+    <h2>撥打電話</h2>
+    <a href="tel:062532558">資展國際(台南中心)</a>
+
+    <hr />
+    <h2>檔案檢視/下載</h2>
+    <a href="./網頁設計入門_260318.pdf" target="_blank"
+      >網頁設計入門_260318（檢視）</a
+    >
+    <a href="./網頁設計入門_260318.pdf" download>網頁設計入門_260318（下載）</a>
+
+    <hr />
+    <h2>清單結合超連結</h2>
+    <h3>延伸閱讀</h3>
+    <ul>
+      <!-- 方式一： li > a > 文字 -->
+      <li>
+        <a
+          href="https://www.peoplenews.tw/articles/sports-recreation/25267?utm_source=peoplenews&utm_medium=referral&utm_campaign=25456"
+          target="_blank"
+          style="background-color: lightblue"
+        >
+          全中職唯一對戰挨過2轟 徐若熙8日有望日職首對決林安可
+        </a>
+      </li>
+      <!-- 方式二： a > li > 文字 -->
+      <a
+        href="https://www.peoplenews.tw/articles/sports-recreation/25005?utm_source=peoplenews&utm_medium=referral&utm_campaign=25456"
+        target="_blank"
+      >
+        <li style="background-color: lightblue">
+          MLB》鄧愷威成功拆彈中繼2.1局無失分 主播喊：幫他募資買新人卡
+        </li>
+      </a>
+      <!-- 方式三： li > a > div > 文字 -->
+      <li>
+        <a
+          href="https://www.peoplenews.tw/articles/sports-recreation/25005?utm_source=peoplenews&utm_medium=referral&utm_campaign=25456"
+          target="_blank"
+        >
+          <div style="background-color: lightblue">
+            2026職棒懶人包》中職、MLB、日職開打時間、轉播資訊一次看
+          </div>
+        </a>
+      </li>
+    </ul>
+  </body>
+</html>

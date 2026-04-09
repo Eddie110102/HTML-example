@@ -1,0 +1,33 @@
+/* 外部連結 */
+.anchor1:link{
+  text-decoration: none;
+}
+.anchor1:visited{
+  color: gray;
+}
+.anchor1:hover{
+  text-decoration: underline solid navy;
+  color: navy;
+}
+.anchor1:active{
+  color: lightblue;
+  text-decoration-color: lightblue;
+}
+
+/* 錨點 */
+.target:link{
+  text-decoration: none;
+  color: blueviolet;
+}
+.target:visited{
+  color: rgb(208, 159, 255);
+}
+.target:hover{
+  text-decoration: underline solid purple;
+  color: purple;
+  font-size: 18px;
+}
+.target:active{
+  color: pink;
+  text-decoration-color: pink;
+}
