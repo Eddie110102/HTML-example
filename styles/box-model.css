@@ -41,7 +41,7 @@ img,
   box-sizing: border-box;
 }
 
-/* 圓形 */
+/* 圓形 -> 正方形 border-radius */
 .circle {
   width: 100px;
   height: 100px;
@@ -52,4 +52,18 @@ img,
   /* border-radius: 10px; */
   /* border-radius: 10px 20px; */
   /* border-radius: 10px 20px 40px 80px; */
+}
+
+.center {
+  text-align: center;
+  line-height: 100px;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+html {
+  scroll-behavior: smooth;
 }
