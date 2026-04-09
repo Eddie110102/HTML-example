@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>清單樣式 - list css</title>
+    <link rel="stylesheet" href="./styles/list.css">
+  </head>
+  <body>
+    <a href="./01-HTML文件結構-html-skeleton.html"
+      >01-HTML文件結構-html-skeleton</a
+    >
+    <a href="./02-文字元素-text.html">02-文字元素-text</a>
+    <a href="./03-區塊與行內元素-block-inline.html"
+      >03-區塊與行內元素-block-inline</a
+    >
+    <a href="./04-圖片元素-image.html">04-圖片元素-image</a>
+    <a href="./05-清單元素-list.html">05-清單元素-list</a>
+    <a href="./06-超連結元素-anchor.html">06-超連結元素-anchor</a>
+    <hr />
+    <h1>清單樣式</h1>
+
+    <h2>項目清單(無優先順序)</h2>
+    <h3>商品列表</h3>
+    <ul class="ul-img">
+      <li>上衣</li>
+      <li class="inside">褲子</li>
+      <li>內著</li>
+      <li>配件</li>
+    </ul>
+
+    <hr />
+    <h2>序號清單(有優先順序)</h2>
+    <!-- emmet: ol>li{單一項目內容-$}*4 -->
+    <ol>
+      <li>單一項目內容-1</li>
+      <li>單一項目內容-2</li>
+      <li>單一項目內容-3</li>
+      <li>單一項目內容-4</li>
+    </ol>
+
+    <hr />
+    <h2>巢狀清單</h2>
+    <ul>
+      <li>單一項目內容-1</li>
+      <li>單一項目內容-2</li>
+      <li>
+        單一項目內容-3
+        <!-- emmet: ul>li{次要項目-3-$}*3 -->
+        <ul>
+          <li>次要項目-3-1</li>
+          <li>
+            次要項目-3-2
+            <ul>
+              <li>最小項目-3-2-1</li>
+              <li>最小項目-3-2-2</li>
+              <li>最小項目-3-2-3</li>
+              <li>最小項目-3-2-4</li>
+              <li>最小項目-3-2-5</li>
+            </ul>
+          </li>
+          <li>次要項目-3-3</li>
+        </ul>
+      </li>
+      <li>單一項目內容-4</li>
+    </ul>
+
+    <hr />
+    <!-- iphone 14pro 網頁紀錄： https://web.archive.org/web/20221117001401/https://www.apple.com/tw/iphone-14-pro/  -->
+    <h2>定義清單</h2>
+    <dl>
+      <dt>內容-1</dt>
+      <dd>內容補充說明-1</dd>
+      <dt>內容-2</dt>
+      <dd>內容補充說明-2-1</dd>
+      <dd>內容補充說明-2-2</dd>
+      <dd>內容補充說明-2-3</dd>
+      <dt>內容-3</dt>
+      <dd>內容補充說明-3</dd>
+      <dt>內容-4</dt>
+      <dd>
+        <ul>
+          <li>內容補充說明-3-1</li>
+          <li>內容補充說明-3-2</li>
+          <li>內容補充說明-3-3</li>
+          <li>內容補充說明-3-4</li>
+        </ul>
+      </dd>
+    </dl>
+  </body>
+</html>

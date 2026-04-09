@@ -1,0 +1,23 @@
+ul{
+  list-style-type: circle;
+}
+
+ol{
+  list-style-type: lower-roman;
+}
+
+.ul-img{
+  list-style-type: none;
+  list-style-image: url(../images/arrow-list.jpg);
+
+  background-color: pink;
+  text-align: center;
+}
+
+.ul-img li{
+  background-color: lightblue;
+}
+
+.inside{
+  list-style-position: inside;
+}
