@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google" content="notranslate">
     <title>文字樣式 - text css - 3</title>
     <style>
       p {
@@ -66,6 +67,13 @@
         text-align: justify;
         /* text-align-last: right; */
       }
+
+      .box{
+        border: 2px solid black;
+        height: 100px;
+        /* line-height包含文字高度 */
+        line-height: 100px;
+      }
     </style>
   </head>
   <body>
@@ -92,6 +100,7 @@
     <hr />
 
     <h2>文字行高</h2>
+    <!-- emmet: lorem*4 -->
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nobis esse
       aspernatur sequi similique vero dolore, quaerat harum amet veniam maiores
@@ -163,5 +172,12 @@
       magni distinctio doloremque, sint exercitationem! Nesciunt voluptatum a
       repudiandae libero dolorem facilis.
     </p>
+
+    <hr>
+
+    <h2>文字垂直置中對齊</h2>
+    <h3>line-height方式(限制只能單行文字)</h3>
+    <div class="box center">單行文字</div>
+    <div class="box center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis in nemo eligendi eveniet reiciendis aspernatur veritatis nesciunt possimus necessitatibus molestias, repellendus, delectus iure? Ducimus totam, repellat magnam sit ab reprehenderit!</div>
   </body>
 </html>
