@@ -1,32 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-hant-TW">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>方塊模型 - box model</title>
-  <link rel="stylesheet" href="./styles/box-model.css">
-</head>
-<body>
-  <h1>方塊模型</h1>
-  <h2>圖片元素：區塊與行內的特性</h2>
-  <img src="./images/space.jpg" alt="">
-  <img src="./images/Charizard.jpg" alt="">
-  <img src="./images/pikachu.jpg" alt="">
-  <img src="./images/pikachu.jpg" alt="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>方塊模型 - box model</title>
+    <link rel="stylesheet" href="./styles/box-model.css" />
+  </head>
+  <body>
+    <h1>方塊模型</h1>
+    <h2>圖片元素：區塊與行內的特性</h2>
+    <img src="./images/space.jpg" alt="" />
+    <img src="./images/Charizard.jpg" alt="" class="border-box" />
+    <img src="./images/pikachu.jpg" alt="" />
+    <img src="./images/pikachu.jpg" alt="" />
 
-  <hr>
+    <hr />
 
-  <h2>區塊元素的特性(垂直向的margin會重疊)</h2>
-  <div class="box">區塊容器</div>
-  <div class="box">區塊容器</div>
-  <div class="box">區塊容器</div>
-  <div class="box">區塊容器</div>
+    <h2>區塊元素的特性(垂直向的margin會重疊)</h2>
+    <div class="box">區塊容器</div>
+    <div class="box">區塊容器</div>
+    <div class="box">區塊容器</div>
+    <div class="box">區塊容器</div>
 
-  <hr>
-  <h2>行內元素的特性(不能設定內容、沒有垂直向margin、水平向margin不重疊)</h2>
-  <span class="box">行內容器</span>
-  <span class="box">行內容器</span>
-  <span class="box">行內容器</span>
-  <span class="box">行內容器</span>
-</body>
+    <hr />
+    <h2>行內元素的特性(不能設定內容、沒有垂直向margin、水平向margin不重疊)</h2>
+    <span class="box">行內容器</span>
+    <span class="box">行內容器</span>
+    <span class="box">行內容器</span>
+    <span class="box">行內容器</span>
+
+    <hr>
+    <h2>圓形</h2>
+    <div class="circle"></div>
+
+    <hr>
+    <h2>scroll to top</h2>
+  </body>
 </html>
