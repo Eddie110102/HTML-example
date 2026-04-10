@@ -8,7 +8,7 @@
   </head>
   <body>
     <h1>表單元素</h1>
-    <form action="#" method="get" enctype="application/x-www-form-urlencoded">
+    <form action="#" method="get" enctype="multipart/form-data">
       <div class="box">
         <!-- 單行文字控制項 -->
         <label for="myName" class="t1">姓名</label>
@@ -104,6 +104,27 @@
           checked
         />
         <label for="option4">選項4</label>
+      </div>
+
+      <div class="box">
+        <!-- 連動式下拉式選單：https://codepen.io/pamcy/pen/Jvmavx -->
+        <label for="mySelect" class="t1">下拉式選單</label>
+        <select name="userSelect" id="mySelect">
+        <!-- <select name="userSelect" id="mySelect" multie size="10"> -->
+          <!-- emmet: option[value=option$]{選項$}*6 -->
+          <!-- <option value="default" hidden>請選擇</option> -->
+          <option value="option1">選項1</option>
+          <option value="option2">選項2</option>
+          <option value="option3">選項3</option>
+          <option value="option4">選項4</option>
+          <option value="option5" selected>選項5</option>
+          <option value="option6">選項6</option>
+        </select>
+      </div>
+
+      <div class="box">
+        <label for="myFile" class="t1">檔案上傳</label>
+        <input type="file" id="myFile" name="userFile" multiple>
       </div>
 
       <div class="btns">
