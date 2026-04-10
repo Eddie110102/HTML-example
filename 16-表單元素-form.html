@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>表單元素 - form</title>
+    <link rel="stylesheet" href="./styles/form.css" />
+  </head>
+  <body>
+    <h1>表單元素</h1>
+    <form action="#" method="get" enctype="application/x-www-form-urlencoded">
+      <!-- 單行文字控制項 -->
+      <label for="myName">姓名</label>
+      <input
+        type="text"
+        name="userName"
+        id="myName"
+        placeholder="請輸入您的大名"
+        value="王曉明"
+      />
+      <!-- userName=王曉明 -->
+
+      <!-- 密碼控制項 -->
+      <label for="myPassword">密碼</label>
+      <input
+        type="password"
+        name="userPassword"
+        id="myPassword"
+        placeholder="請輸入6-8位數字密碼"
+        value="123456"
+        maxlength="8"
+        minlength="6"
+      />
+
+      <!-- 多行文字控制項 -->
+      <label for="myMemo">備忘錄</label>
+      <textarea
+        name="userMemo"
+        id="myMemo"
+        placeholder="最大上限500字。"
+        cols="30"
+        rows="10"
+        maxlength="500"
+      >
+預設內容</textarea
+      >
+    </form>
+  </body>
+</html>
