@@ -18,3 +18,17 @@ form {
 .btns {
   text-align: center;
 }
+
+fieldset {
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+legend {
+  padding: 0 20px;
+}
+/* :first-child 、 :last-child */
+fieldset > :last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
