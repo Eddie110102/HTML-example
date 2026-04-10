@@ -3,6 +3,8 @@
 3. 透過鍵盤選取多行程式碼：  shift + 上/下鍵
 4. 快速移動一行/多行程式碼： alt + 上/下鍵
 5. 延伸輸入鍵： ctrl + alt + 上/下鍵
+6. 搜尋： ctrl + f
+7. 取代： ctrl + h
 
 emmet
 1. HTML文件結構： shift + !

@@ -48,6 +48,64 @@
 預設內容</textarea
         >
       </div>
+
+      <div class="box">
+        <!-- 單選題 -->
+        <span class="t1">性別</span>
+
+        <input type="radio" name="userGender" id="male" value="male" />
+        <label for="male">男性</label>
+
+        <input type="radio" name="userGender" id="female" value="female" />
+        <label for="female">女性</label>
+
+        <label for="hidden">
+          <input
+            type="radio"
+            name="userGender"
+            id="hidden"
+            value="hidden"
+            checked
+          />
+          不提供
+        </label>
+      </div>
+
+      <div class="box">
+        <span class="t1">複選題</span>
+
+        <input
+          type="checkbox"
+          name="userMultipleCheckbox"
+          id="option1"
+          value="option1"
+        />
+        <label for="option1">選項1</label>
+        <input
+          type="checkbox"
+          name="userMultipleCheckbox"
+          id="option2"
+          value="option2"
+        />
+        <label for="option2">選項2</label>
+        <input
+          type="checkbox"
+          name="userMultipleCheckbox"
+          id="option3"
+          value="option3"
+          checked
+        />
+        <label for="option3">選項3</label>
+        <input
+          type="checkbox"
+          name="userMultipleCheckbox"
+          id="option4"
+          value="option4"
+          checked
+        />
+        <label for="option4">選項4</label>
+      </div>
+
       <div class="btns">
         <!-- 按鈕 -->
         <input type="submit" value="送出" />
