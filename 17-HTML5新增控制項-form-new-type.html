@@ -56,6 +56,7 @@
 
       <fieldset>
         <legend>文字相關控制項</legend>
+        <!-- emmet: .box>label.t1[for=myEmail]{email}+input:email[name=userEmail][id=myEmail] -->
         <div class="box">
           <label for="myEmail" class="t1">email</label>
           <input type="email" name="userEmail" id="myEmail" />
@@ -80,6 +81,37 @@
         </div>
       </fieldset>
 
+      <fieldset>
+        <legend>其他控制項</legend>
+        <div class="box">
+          <label for="myColor" class="t1">color</label>
+          <input type="color" name="userColor" id="myColor" value="#1f29bd" />
+        </div>
+        <div class="box">
+          <label for="myRange" class="t1">range</label>
+          <input
+            type="range"
+            name="userRange"
+            id="myRange"
+            min="0"
+            max="100"
+            step="25"
+            value="75"
+          />
+        </div>
+        <div class="box">
+          <label for="myNumber" class="t1">number</label>
+          <input
+            type="number"
+            name="userNumber"
+            id="myNumber"
+            min="0"
+            max="100"
+            value="60"
+            step="20"
+          />
+        </div>
+      </fieldset>
       <div class="btns">
         <input type="submit" />
       </div>
