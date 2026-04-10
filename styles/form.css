@@ -1,0 +1,20 @@
+form {
+  width: 500px;
+}
+
+.box {
+  border-bottom: 2px dashed gray;
+  padding-bottom: 20px;
+  margin: 20px;
+}
+
+.t1 {
+  float: left;
+  width: 100px;
+  text-align-last: justify;
+  padding-right: 10px;
+}
+
+.btns {
+  text-align: center;
+}

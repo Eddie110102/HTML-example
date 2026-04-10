@@ -9,41 +9,55 @@
   <body>
     <h1>表單元素</h1>
     <form action="#" method="get" enctype="application/x-www-form-urlencoded">
-      <!-- 單行文字控制項 -->
-      <label for="myName">姓名</label>
-      <input
-        type="text"
-        name="userName"
-        id="myName"
-        placeholder="請輸入您的大名"
-        value="王曉明"
-      />
-      <!-- userName=王曉明 -->
-
-      <!-- 密碼控制項 -->
-      <label for="myPassword">密碼</label>
-      <input
-        type="password"
-        name="userPassword"
-        id="myPassword"
-        placeholder="請輸入6-8位數字密碼"
-        value="123456"
-        maxlength="8"
-        minlength="6"
-      />
-
-      <!-- 多行文字控制項 -->
-      <label for="myMemo">備忘錄</label>
-      <textarea
-        name="userMemo"
-        id="myMemo"
-        placeholder="最大上限500字。"
-        cols="30"
-        rows="10"
-        maxlength="500"
-      >
+      <div class="box">
+        <!-- 單行文字控制項 -->
+        <label for="myName" class="t1">姓名</label>
+        <input
+          type="text"
+          name="userName"
+          id="myName"
+          placeholder="請輸入您的大名"
+          value="王曉明"
+        />
+        <!-- userName=王曉明 -->
+      </div>
+      <div class="box">
+        <!-- 密碼控制項 -->
+        <label for="myPassword" class="t1">密碼</label>
+        <input
+          type="password"
+          name="userPassword"
+          id="myPassword"
+          placeholder="請輸入6-8位數字密碼"
+          value="123456"
+          maxlength="8"
+          minlength="6"
+        />
+      </div>
+      <div class="box">
+        <!-- 多行文字控制項 -->
+        <label for="myMemo" class="t1">備忘錄</label>
+        <textarea
+          name="userMemo"
+          id="myMemo"
+          placeholder="最大上限500字。"
+          cols="30"
+          rows="10"
+          maxlength="500"
+        >
 預設內容</textarea
-      >
+        >
+      </div>
+      <div class="btns">
+        <!-- 按鈕 -->
+        <input type="submit" value="送出" />
+        <input type="reset" value="清除" />
+        <!-- <button type="submit">送出</button>
+  <button type="reset">重設</button> -->
+        <!-- 一般按鈕 -->
+        <input type="button" value="一般按鈕" disabled />
+        <button type="button" disabled>一般按鈕</button>
+      </div>
     </form>
   </body>
 </html>
