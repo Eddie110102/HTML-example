@@ -12,3 +12,23 @@ th,td{
   text-align: center;
   vertical-align: middle;
 }
+
+thead > tr{
+  background-color: #9A0036;
+  color: white;
+}
+/* 2n = even / 2n+1 = odd */
+tbody > tr:nth-child(2n){
+  background-color: lightblue;
+}
+
+tbody > tr:hover{
+  background-color: pink;
+}
+
+/* tbody > tr:nth-child(2n):hover{
+  background-color: pink;
+}
+tbody > tr:nth-child(2n+1):hover{
+  background-color: salmon;
+} */
