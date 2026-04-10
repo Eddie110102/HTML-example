@@ -59,7 +59,14 @@
         <!-- emmet: .box>label.t1[for=myEmail]{email}+input:email[name=userEmail][id=myEmail] -->
         <div class="box">
           <label for="myEmail" class="t1">email</label>
-          <input type="email" name="userEmail" id="myEmail" />
+          <input
+            type="email"
+            name="userEmail"
+            id="myEmail"
+            autocomplete="off"
+            autofocus
+            required
+          />
         </div>
         <div class="box">
           <label for="myUrl" class="t1">url</label>
@@ -68,12 +75,20 @@
             name="userUrl"
             id="myUrl"
             placeholder="https://www.example.com"
-            value="https://"
+            required
           />
         </div>
         <div class="box">
           <label for="myTel" class="t1">tel</label>
-          <input type="tel" name="userTel" id="myTel" />
+          <input
+            type="tel"
+            name="userTel"
+            id="myTel"
+            pattern="^[0][9]\d{8}$"
+            maxlength="10"
+            readonly
+            value="0912345678"
+          />
         </div>
         <div class="box">
           <label class="t1" for="mySearch">search</label>
@@ -98,6 +113,7 @@
             step="25"
             value="75"
           />
+          <span id="rangeText">75</span>
         </div>
         <div class="box">
           <label for="myNumber" class="t1">number</label>
@@ -116,5 +132,13 @@
         <input type="submit" />
       </div>
     </form>
+
+    <script>
+      const myRange = document.querySelector("#myRange");
+      const rangeText = document.querySelector("#rangeText");
+      myRange.addEventListener("input", () => {
+        rangeText.innerText = myRange.value;
+      });
+    </script>
   </body>
 </html>
