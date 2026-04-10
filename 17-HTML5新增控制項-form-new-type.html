@@ -8,5 +8,54 @@
   </head>
   <body>
     <h1>HTML5 新增控制項</h1>
+    <form action="#">
+      <fieldset>
+        <legend>日期控制項</legend>
+        <div class="box">
+          <label for="myDate" class="t1">date</label>
+          <input
+            type="date"
+            name="userDate"
+            id="myDate"
+            value="2026-04-10"
+            min="2026-04-10"
+            max="2026-04-23"
+          />
+        </div>
+        <div class="box">
+          <label for="myDatetimeLocal" class="t1">datetime-local</label>
+          <input
+            type="datetime-local"
+            name="userDatetimeLocal"
+            id="myDatetimeLocal"
+            value="2026-04-09T12:10"
+            min="2026-04-09T12:00"
+            max="2026-04-10T13:43"
+          />
+        </div>
+        <div class="box">
+          <label for="myTime" class="t1">time</label>
+          <input
+            type="time"
+            name="userTime"
+            id="myTime"
+            value="11:25"
+            min=""
+            max=""
+          />
+        </div>
+        <div class="box">
+          <label for="myMonth" class="t1">month</label>
+          <input type="month" name="userMonth" id="myMonth" value="2025-11" />
+        </div>
+        <div class="box">
+          <label for="myWeek" class="t1">week</label>
+          <input type="week" name="userWeek" id="myWeek" value="2026-W01" />
+        </div>
+      </fieldset>
+      <div class="btns">
+        <input type="submit" />
+      </div>
+    </form>
   </body>
 </html>
