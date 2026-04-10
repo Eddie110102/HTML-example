@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>定位方式 - position</title>
+    <style>
+      div {
+        border: 2px solid black;
+      }
+      .r {
+        background-color: navy;
+        color: white;
+
+        /* 原點: 自己元素本身左上角 */
+        /* 移動後，原始位置會保留 */
+        position: relative;
+        top: 0;
+        left: 0;
+      }
+
+      .a{
+        background-color: pink;
+        color: red;
+
+        /* 原點: 往父層(更外層->html)，最接近他的元素身上有relative */
+        /* 原始位置不會保留 */
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .f{
+        background-color: lightgreen;
+        color: green;
+
+        /* 原點: 視窗的左上角 */
+        position: fixed;
+        top: 500px;
+        left: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>定位方式</h1>
+    <div class="r">定位 - relative</div>
+    <div class="a">定位 - absolute</div>
+    <div class="f">定位 - fixed</div>
+    <div class="s">定位 - static</div>
+
+    <hr>
+
+    <section class="r">
+      section元素
+      <span class="a">section元素中的span</span>
+    </section>
+
+    <div style="height: 300vh;"></div>
+
+    
+  </body>
+</html>
